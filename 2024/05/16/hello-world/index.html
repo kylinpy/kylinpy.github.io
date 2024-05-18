@@ -161,14 +161,12 @@
     <div class="header-right">
       <ul class="header-menu">
         <li>
-          <a href="http://example.com/">
           <a href="https://kylinchpy.github.io/">
             <i class="header-menu--icon iconfont icon-shouye"></i>
             <span class="header-menu--span">首頁</span>
           </a>
         </li>
         <li>
-          <a href="http://example.com/log">
           <a href="https://kylinchpy.github.io/log">
             <i class="header-menu--icon iconfont icon-rizhi"></i>
             <span class="header-menu--span">日誌</span>
@@ -181,7 +179,6 @@
           </a>
         </li>
         <li>
-          <a href="http://example.com/about">
           <a href="https://kylinchpy.github.io/about">
             <i class="header-menu--icon iconfont icon-guanyuwomen"></i>
             <span class="header-menu--span">關於我</span>
@@ -327,12 +324,10 @@
       </p>
       <p class="main-left--subtitle">
         <span>最新動態：</span>
-        <span>今天</span>
         <span>昨天</span>
       </p>
       <p class="main-left--subtitle">
         <span>上線時間：</span>
-        <span>1天</span>
         <span>3天</span>
       </p>
       <p class="main-left--subtitle">
@@ -415,7 +410,6 @@
 
 <script>
   // var定义，避免pjax重新进来造成的重复声明错误
-  var config = JSON.parse('{"enable":true,"appId":"Pf8zCXGEH1qsprnWfikVVujL-gzGzoHsz","appKey":"qOqoiUHhH1TGtLRUYURkLRQX","placeholder":"请留下你宝贵的意见吧~","meta":["nick"],"recordIP":true,"visitor":true,"enableQQ":true}')
   var config = JSON.parse('{"enable":true,"appId":"Pf8zCXGEH1qsprnWfikVVujL-gzGzoHsz","appKey":"qOqoiUHhH1TGtLRUYURkLRQX","placeholder":"請留下您寶貴的意見吧~","meta":["nick"],"recordIP":true,"visitor":true,"enableQQ":true}')
   new Valine({
     el: '#vcomments',
@@ -512,7 +506,6 @@
   }
 
   setOperateItem()
-  const musics = JSON.parse(`[{"name":"輕鬆的bgm01","artist":"無","url":"music/輕鬆的bgm01.wav","cover":"/"},{"name":"輕鬆的bgm02","artist":"無","url":"music/輕鬆的bgm02.wav","cover":"/"},{"name":"輕鬆的bgm03","artist":"無","url":"music/輕鬆的bgm03.wav","cover":"/"},{"name":"輕鬆的bgm04","artist":"無","url":"music/輕鬆的bgm04.wav","cover":"/"},{"name":"怪物","artist":"YOASOBI","url":"music/怪物.3gpp","cover":"/"}]`)
   const musics = JSON.parse(`[{"name":"輕鬆的bgm01","artist":"","url":"music/輕鬆的bgm01.wav","cover":"/"},{"name":"輕鬆的bgm02","artist":"","url":"music/輕鬆的bgm02.wav","cover":"/"},{"name":"輕鬆的bgm03","artist":"","url":"music/輕鬆的bgm03.wav","cover":"/"},{"name":"輕鬆的bgm04","artist":"","url":"music/輕鬆的bgm04.wav","cover":"/"},{"name":"怪物","artist":"YOASOBI","url":"music/怪物.3gpp","cover":"/"}]`)
   const ap = new APlayer({
     container: document.querySelector('#aplayer'),
