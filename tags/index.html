@@ -193,7 +193,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"第一次用hexo與GitHub Pages","path":"2024/05/16/hello-world/"},{"title":"程式作品集的介紹1","path":"2024/06/02/RTIP/"}]`)
+  const posts = JSON.parse(`[{"title":"第一次用hexo與GitHub Pages","path":"2024/05/16/hello-world/"},{"title":"程式作品集的介紹1","cover":["/../../../imgs/obj/face0.jpg"],"path":"2024/06/02/RTIP/"},{"title":"全球空氣品質監測資訊","cover":["/../../../imgs/obj/air0.jpg"],"path":"2024/06/03/mini01-air/"},{"title":"儀器data擷取彙整","cover":["/../../../imgs/obj/data0.jpg"],"path":"2024/06/03/mini02-data/"},{"title":"家庭記帳本","cover":["/../../../imgs/obj/money0.jpg"],"path":"2024/06/03/mini03-ledger/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -258,13 +258,13 @@
       <div class="main-left--statics">
         <a href="/categories">
           <div>
-            <span>0</span>
+            <span>1</span>
             <span>分類</span>
           </div>
         </a>
         <a href="/tags">
           <div>
-            <span>3</span>
+            <span>4</span>
             <span>標籤</span>
           </div>
         </a>
@@ -320,7 +320,7 @@
       </h5>
       <p class="main-left--subtitle">
         <span>文章數量：</span>
-        <span>2 篇</span>
+        <span>5 篇</span>
       </p>
       <p class="main-left--subtitle">
         <span>最新動態：</span>
@@ -328,7 +328,7 @@
       </p>
       <p class="main-left--subtitle">
         <span>上線時間：</span>
-        <span>18天</span>
+        <span>19天</span>
       </p>
       <p class="main-left--subtitle">
         <span>當前版本：</span>
@@ -345,7 +345,7 @@
 <div class="tags">
   <h2 class="tags-title">小站標籤</h2>
   <div class="tags-list">
-    <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/%E4%BD%9C%E5%93%81%E9%9B%86/" style="font-size: 10px;">作品集</a>
+    <a href="/tags/GitHub/" style="font-size: 10px;">GitHub</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/%E5%BD%B1%E5%83%8F%E8%BE%A8%E8%AD%98/" style="font-size: 10px;">影像辨識</a> <a href="/tags/%E7%88%AC%E8%9F%B2/" style="font-size: 10px;">爬蟲</a>
   </div>
 </div>
 

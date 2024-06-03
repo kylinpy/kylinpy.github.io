@@ -193,7 +193,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"第一次用hexo與GitHub Pages","path":"2024/05/16/hello-world/"},{"title":"程式作品集的介紹1","path":"2024/06/02/RTIP/"}]`)
+  const posts = JSON.parse(`[{"title":"第一次用hexo與GitHub Pages","path":"2024/05/16/hello-world/"},{"title":"程式作品集的介紹1","cover":["/../../../imgs/obj/face0.jpg"],"path":"2024/06/02/RTIP/"},{"title":"全球空氣品質監測資訊","cover":["/../../../imgs/obj/air0.jpg"],"path":"2024/06/03/mini01-air/"},{"title":"儀器data擷取彙整","cover":["/../../../imgs/obj/data0.jpg"],"path":"2024/06/03/mini02-data/"},{"title":"家庭記帳本","cover":["/../../../imgs/obj/money0.jpg"],"path":"2024/06/03/mini03-ledger/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -258,13 +258,13 @@
       <div class="main-left--statics">
         <a href="/categories">
           <div>
-            <span>0</span>
+            <span>1</span>
             <span>分類</span>
           </div>
         </a>
         <a href="/tags">
           <div>
-            <span>3</span>
+            <span>4</span>
             <span>標籤</span>
           </div>
         </a>
@@ -320,7 +320,7 @@
       </h5>
       <p class="main-left--subtitle">
         <span>文章數量：</span>
-        <span>2 篇</span>
+        <span>5 篇</span>
       </p>
       <p class="main-left--subtitle">
         <span>最新動態：</span>
@@ -328,7 +328,7 @@
       </p>
       <p class="main-left--subtitle">
         <span>上線時間：</span>
-        <span>18天</span>
+        <span>19天</span>
       </p>
       <p class="main-left--subtitle">
         <span>當前版本：</span>
@@ -351,23 +351,23 @@
           
           <div class="article-info--categories">
             <span>分類：</span>
-            
+            <a class="category-link" href="/categories/%E4%BD%9C%E5%93%81/">作品</a>
           </div>
           
           
           <div class="article-info--tags">
             <span>標籤：</span>
-            <a class="tag-link" href="/tags/%E4%BD%9C%E5%93%81%E9%9B%86/" rel="tag">作品集</a>
+            <a class="tag-link" href="/tags/%E5%BD%B1%E5%83%8F%E8%BE%A8%E8%AD%98/" rel="tag">影像辨識</a>
           </div>
           
           <p class="article-info--date">日期：2024-06-02 16:31:42</p>
         </div>
-        <img src="/imgs/default-cover.webp" alt="" class="article-cover">
+        <img src="/../../../imgs/obj/face0.jpg" alt="" class="article-cover">
       </div>
     </div>
     <article class="article-content markdown-body">
-      <h2 id="第一本程式作品集"><a href="#第一本程式作品集" class="headerlink" title="第一本程式作品集"></a>第一本程式作品集</h2><p>聽取輔導老師的建議修改了很多次，花了非常多的時間，<br>雖然很想把這些時間拿去上java的網路課或是寫程式，<br>但對自己的作品集負責，讓它留下一個階段性的任務也是很重要的。<br>這邊作品集中的其中一個作品的操作頁紹影片:<a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1XdA8tSnF1AQqlBt5cNSFeOwLzXYHUItb/view?usp=drive_link">自製影像處理工具</a></p>
-<h2 id="關於作品"><a href="#關於作品" class="headerlink" title="關於作品"></a>關於作品</h2><p>●利用OpenCV結合mediapipe及 dlib影像辨識模組進行即時影像人臉及手部辨識<br>●仿照手機視訊Line貼圖特效，但不需點擊發送，只需比個手勢或擺出臉部表情<br>●可依喜好隨時更換背景與裝飾的即時畫面<br>●附加濾鏡效果與拍照、錄影功能</p>
+      <h2 id="第一本程式作品集"><a href="#第一本程式作品集" class="headerlink" title="第一本程式作品集"></a>第一本程式作品集</h2><p>聽取輔導老師的建議修改了很多次，花了非常多的時間，<br>雖然很想把這些時間拿去上java的網路課或是寫程式，<br>但對自己的作品集負責，讓它留下一個階段性的任務也是很重要的。<br>這邊作品集中的其中一個作品的操作頁紹影片:<a href="/../../../video/py3_RTIP.mp4">自製影像處理工具</a></p>
+<h2 id="關於作品-自製影像處理工具"><a href="#關於作品-自製影像處理工具" class="headerlink" title="關於作品-自製影像處理工具"></a>關於作品-自製影像處理工具</h2><p>●利用OpenCV結合mediapipe及 dlib影像辨識模組進行即時影像人臉及手部辨識<br>●仿照手機視訊Line貼圖特效，但不需點擊發送，只需比個手勢或擺出臉部表情<br>●可依喜好隨時更換背景與裝飾的即時畫面<br>●附加濾鏡效果與拍照、錄影功能</p>
 <h2 id="關於影片剪輯"><a href="#關於影片剪輯" class="headerlink" title="關於影片剪輯"></a>關於影片剪輯</h2><p>因為我完全沒有影片剪輯的經驗，所有的東西都是靠網路谷哥，<br>好在有很多大神推薦很多好用的試用版工具，部分剪輯還是利用python import cv2…，<br>因為現在會的就只有這些咩&gt;&lt;  剛好趁這個機會多玩點有趣的東西也不錯</p>
 <h2 id="後記"><a href="#後記" class="headerlink" title="後記"></a>後記</h2><p>正在上傳這篇的我身體不適中，但還是很想把它做完…<br>拿著塑膠袋邊吐邊打字，真是難得的經驗啊QQ</p>
 
@@ -391,10 +391,15 @@
     <div class="article-catelogue--wrapper">
       <div class="catelogue catelogue-1">
         <h3>目錄</h3>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%9C%AC%E7%A8%8B%E5%BC%8F%E4%BD%9C%E5%93%81%E9%9B%86"><span class="toc-number">1.</span> <span class="toc-text">第一本程式作品集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%9C%E6%96%BC%E4%BD%9C%E5%93%81"><span class="toc-number">2.</span> <span class="toc-text">關於作品</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%9C%E6%96%BC%E5%BD%B1%E7%89%87%E5%89%AA%E8%BC%AF"><span class="toc-number">3.</span> <span class="toc-text">關於影片剪輯</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%8C%E8%A8%98"><span class="toc-number">4.</span> <span class="toc-text">後記</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%9C%AC%E7%A8%8B%E5%BC%8F%E4%BD%9C%E5%93%81%E9%9B%86"><span class="toc-number">1.</span> <span class="toc-text">第一本程式作品集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%9C%E6%96%BC%E4%BD%9C%E5%93%81-%E8%87%AA%E8%A3%BD%E5%BD%B1%E5%83%8F%E8%99%95%E7%90%86%E5%B7%A5%E5%85%B7"><span class="toc-number">2.</span> <span class="toc-text">關於作品-自製影像處理工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%9C%E6%96%BC%E5%BD%B1%E7%89%87%E5%89%AA%E8%BC%AF"><span class="toc-number">3.</span> <span class="toc-text">關於影片剪輯</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%8C%E8%A8%98"><span class="toc-number">4.</span> <span class="toc-text">後記</span></a></li></ol>
       </div>
       
         <div class="catelogue catelogue-2">
+          
+            <p>
+              <span>上一篇：</span>
+              <a href="/2024/06/03/mini01-air/">全球空氣品質監測資訊</a>
+            </p>
            
           
             <p>
